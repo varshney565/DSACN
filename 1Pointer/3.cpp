@@ -79,11 +79,27 @@ void solve(){
     * 2.& operator
     * 3.reassignment can't be done.
    */
+
+    cout<<sizeof(a)<<"\n";
+    cout<<sizeof(p)<<"\n";
+
     int* p = &a[0];
     cout<<p<<"\n";
     cout<<a<<"\n";
     cout<<&p<<"\n";
     cout<<&a<<"\n";
+
+    /**
+     * we can't do this
+     * 
+     * a = p;
+     * 
+     * but we can do
+     * 
+     * int j = 2;
+     * p = &j;
+     * */
+
 }
 
 signed main()
