@@ -80,14 +80,17 @@ void solve(){
     * 3.reassignment can't be done.
    */
 
-    cout<<sizeof(a)<<"\n";
-    cout<<sizeof(p)<<"\n";
+    
 
     int* p = &a[0];
     cout<<p<<"\n";
     cout<<a<<"\n";
     cout<<&p<<"\n";
     cout<<&a<<"\n";
+
+
+    cout<<sizeof(a)<<"\n";
+    cout<<sizeof(p)<<"\n";
 
     /**
      * we can't do this
