@@ -53,10 +53,57 @@ bool isPrime(int n){if(n==2||n==3)return true;if(n==1||n%2==0||n%3==0)return fal
 
     
 
-*/
+*/  
 
 void solve(){
-    
+    int i = 10;
+    cout<<&i<<"\n";//address of i.
+    /**
+     * pointer are the variables which stores the address of other variables.
+    */
+    int * p = &i;  //p is a pointer to integer i.
+    float t = 1.23;
+    float *pt = &t;//pointer to a floating point number.
+    /**
+     * access the value in that location.
+     * using dereferencing
+    */
+    cout<<i<<"\n";
+    cout<<*p<<"\n";
+
+
+    /**
+     * task 1
+    */
+
+   i = 22;
+   cout<<*p<<"\n";
+
+   (*p)++;
+   cout<<i<<"\n";
+
+
+   /**
+    * another pointer which is also pointing to i.
+   */
+
+   int *q = p;
+   /**
+    * p and q both are pointing to i.
+   */
+
+
+   /**
+    * task 2
+   */
+   int *k;
+   cout<<k<<"\n";
+   /**
+    * we should avoid this very risky.
+   */
+   cout<<*k<<"\n";
+   (*k)++;
+   cout<<*k<<"\n";
 }
 
 signed main()
